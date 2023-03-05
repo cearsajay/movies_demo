@@ -1,0 +1,37 @@
+name: movies_demo
+version: 1.0.0+1
+description: Movies demo app build with flutter using TMDB Apis.
+
+# Prevent accidental publishing to pub.dev.
+publish_to: 'none'
+
+environment:
+  sdk: '>=2.19.3 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  dio: ^5.0.1
+  equatable: ^2.0.5
+  provider: ^6.0.5
+  json_annotation: ^4.8.0
+  intl: ^0.17.0
+  cached_network_image: ^3.2.3
+
+dev_dependencies:
+  flutter_lints: ^2.0.1
+  build_runner: ^2.3.3
+  json_serializable: ^6.6.1
+
+flutter:
+  uses-material-design: true
+
+flutter_intl:
+  enabled: true
+  class_name: AppLocalizations
+  main_locale: en
+  arb_dir: lib/src/localization
+  output_dir: lib/src/localization/generated
+  use_deferred_loading: true

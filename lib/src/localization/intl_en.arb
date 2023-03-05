@@ -1,0 +1,10 @@
+{
+  "@@locale": "en",
+  "appTitle": "Movies Demo",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "moviesTitle": "Movies",
+  "retryButtonLabel": "Retry",
+  "moviesLoadError": "Unable to load movies! Please try again."
+}
