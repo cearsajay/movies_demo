@@ -1,9 +1,7 @@
 name: movies_demo
 version: 1.0.0+1
 description: Movies demo app build with flutter using TMDB Apis.
-
-# Prevent accidental publishing to pub.dev.
-publish_to: 'none'
+publish_to: none
 
 environment:
   sdk: '>=2.19.3 <3.0.0'
@@ -13,7 +11,7 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
-  dio: ^5.0.1
+  dio: ^5.1.1
   equatable: ^2.0.5
   provider: ^6.0.5
   json_annotation: ^4.8.0
