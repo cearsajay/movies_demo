@@ -2,7 +2,29 @@
 
 > Movies demo app build with flutter using TMDB Apis.
 
-![ui.png](images%2Fui.png)
+
+### Development Environment
+
+* Dart Sdk: >= 3.0.0
+* Flutter Sdk: >= 3.10.0
+
+### Pre-steps for running app:
+
+1. For generating required json serialization files execute below command:
+   ```shell
+   dart run build_runner build -d
+   ```
+
+2. For generating localization files execute below commands:
+   ```shell
+   flutter pub global activate intl_utils
+   flutter pub global run intl_utils:generate
+   ```
+
+### Application UI: 
+
+   
+![ui.png](images/ui.png)
 
 ### TODO:
 

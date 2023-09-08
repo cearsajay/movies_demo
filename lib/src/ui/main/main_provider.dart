@@ -21,7 +21,9 @@ class MainProvider extends ChangeNotifier {
 
   UnmodifiableListView<Movie> get movies => UnmodifiableListView(_movies);
 
-  // TODO: Implement pagination for popular movies.
+  /// `getPopularMovies()` : fetches popular movies from TMDB movies database
+  ///
+  /// TODO: Implement pagination in this api, pass page parameter in api for pagination.
   Future<void> getPopularMovies() async {
     _isLoading = true;
     _hasError = false;
@@ -38,9 +40,10 @@ class MainProvider extends ChangeNotifier {
     }
   }
 
+  /// `refresh()` : sets provider to its initial state and invokes [getPopularMovies] method for fetching movies.
   Future<void> refresh() {
     _hasError = false;
-    _movies.clear();
+    _movies = [];
     notifyListeners();
     return getPopularMovies();
   }
